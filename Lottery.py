@@ -16,7 +16,7 @@ def main():
             question_yes_or_no = raw_input("\nAgain? (yes/no):\n>> ")
             if question_yes_or_no == "yes":
                 continue
-            elif question_yes_or_no== "no":
+            elif question_yes_or_no == "no":
                 print "END"
                 break
 
