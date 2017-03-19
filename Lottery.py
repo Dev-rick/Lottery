@@ -11,6 +11,10 @@ def main():
     while True:
         try:
             quantity_of_numbers = int(raw_input("\nPlease enter how many random numbers would you like to have:\n>> "))
+        except ValueError:
+            print "\nPlease enter a number!"
+            continue
+            
             random_numbers(quantity_of_numbers)
 
             question_yes_or_no = raw_input("\nAgain? (yes/no):\n>> ")
@@ -19,10 +23,6 @@ def main():
             elif question_yes_or_no == "no":
                 print "END"
                 break
-
-        except ValueError:
-            print "\nPlease enter a number!"
-            continue
 
 
 
